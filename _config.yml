@@ -1,0 +1,26 @@
+# Site settings
+title: SHORE
+email:
+description: ""
+baseurl: ""
+url: "http://navsa.org"
+twitter_username:
+github_username:  SHOREdevelopers
+google_analytics: false
+
+# Where things are
+destination:      ./_site
+# source:           ./_build
+
+# Handling Reading
+exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
+
+# Conversion
+markdown:         kramdown
+
+# Outputting
+permalink: /:categories/:title/
+
+# Compensating for gh-pages project site
+baseurl: /SHORE
+# https://github.com/jekyll/jekyll/issues/332

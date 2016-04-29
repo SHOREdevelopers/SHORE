@@ -1,0 +1,11 @@
+
+
+p, li, h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+div[role=navigation] {
+    font-family: 'EB Garamond', serif;
+    font-size: 12pt;
+}
