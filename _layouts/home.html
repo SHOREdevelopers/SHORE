@@ -5,7 +5,25 @@
     <title>{{ page.title }}</title>
 </head>
 <body>
+<div class="outer">
 {% include header.html %}
-{{ content }}
+<div class="background">
+    <div class="wrapper">
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+<div class="push"></div></div>
+<div class="footer">
+    <div class="black-ribbon"></div>
+    <p>© 2015 North American Victoria Studies Association<br />
+        Dept. of English, Purdue University, 500 Oval Dr., West Lafayette, IN 47907</p>
+</div>
+<script
+src="https://code.jquery.com/jquery-2.2.3.min.js"
+integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/ui/js/script.js"></script>
 </body>
 </html>

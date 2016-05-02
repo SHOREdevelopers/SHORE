@@ -1,4 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    zoom: 1;
+}
+html, body {
+    height: 100%;
+}
+.outer {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -58px;
+}
+.footer, .push { height: 58px; } /* http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
 
+@media all and (max-width: 1000px) {
+
+.outer {
+    margin: 0 auto;
+}
+.footer, .push {
+    height: auto;
+}
+
+} /* /@media */
+
+.clearfix {
+    /* clearfix via https://css-tricks.com/snippets/css/clear-fix/ */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
 
 p, li, h4 {
     font-family: 'Open Sans', sans-serif;
@@ -9,3 +46,138 @@ div[role=navigation] {
     font-family: 'EB Garamond', serif;
     font-size: 12pt;
 }
+
+.outer {
+    background: #f7f6f1;
+}
+
+.navsa-bar {
+    background: black;
+    line-height: 0;
+    padding-top: 6px;
+    padding-right: 50px;
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%;
+}
+    .navsa-bar > a {
+        display: inline-block;
+        float: right;
+    }
+    .login {
+        background: #469ccc;
+        border-radius: 3px;
+        color: white;
+        font-size: 11px;
+        line-height: 20px;
+        height: 20px;
+        margin-top: 13px;
+        margin-left: 12px;
+        padding-top: 0;
+        padding-right: 10px;
+        padding-bottom: 0;
+        padding-left: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+        .login:hover {
+            background: #3479a3;
+        }
+    .black-ribbon {
+        background: white url('../img/black-ribbon.png') repeat-x;
+        background-size: 51px 7px;
+        bottom: 0;
+        height: 7px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+.masthead {
+    background: url('../img/pattern-line.jpg') bottom left repeat-x;
+    background-size: 1140px 14px;
+    padding-bottom: 13px;
+    width: 100%;
+}
+    .masthead > a {
+
+        float: left;
+
+    }
+    .masthead > .nav-bar {
+        float: right;
+        padding-top: 90px;
+    }
+    .nav-bar > div {
+        display: inline-block;
+        float: left;
+        position: relative;
+    }
+        .nav-bar div > a {
+            background: #787a77;
+            border: 1px solid #787a77;
+            color: white;
+            display: inline-block;
+            line-height: 1.428125em;
+            margin-right: 10px;
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+            .nav-bar div > a.active,
+            .nav-bar div > a:hover {
+                background-color: #469ccc;
+                border-color: #469ccc;
+            }
+            .nav-bar > div > a:not(.active):hover {
+                border-color: white;
+                border-bottom: 0;
+                padding-bottom: 11px;
+            }
+            .nav-bar > div > a.active:hover {
+                background-color: white;
+                border-color: #787a77;
+                color: #787a77;
+            }
+            .nav-bar > div:last-child > a {
+                margin-right: 0;
+            }
+        .nav-bar > div > div {
+            display: none;
+            left: 1px;
+            position: absolute;
+            top: 46px;
+        }
+            .nav-bar > div > div > a {
+                margin-bottom: 1px;
+            }
+
+.background {
+    background: blue;
+}
+
+.wrapper {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.content {
+    background: #e0e0e0;
+}
+
+.footer {
+    background: black;
+    color: gray;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 7px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+    .footer .black-ribbon {
+        background: white url('../img/black-ribbon-up.png') repeat-x;
+        top: 0;
+    }
