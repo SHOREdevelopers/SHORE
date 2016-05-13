@@ -12,7 +12,6 @@ $(document).ready(function() {
     })
 
     $('div.menu-nav-button').on('click', function(e) {
-        console.log( $(this).next('div') );
         $(this).next('div').toggle();
     })
 })

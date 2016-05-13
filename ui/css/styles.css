@@ -194,8 +194,8 @@ html, body {
     }
 }
 @media all and (min-width: 769px) {
-        .nav-bar div:not(.menu-nav-button) {
-            display: block;
+        .nav-bar > div:not(.menu-nav-button) {
+            display: block !important; /* Not our favorite thing to do, but ALWAYS show the nav at full size, even if toggled off on small screen 1st. */
         }
 }
 
