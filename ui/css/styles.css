@@ -14,7 +14,7 @@ html, body {
     }
     .footer, .push { height: 58px; } /* http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
 
-    @media all and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 
     .outer {
         margin: 0 auto;
@@ -23,7 +23,7 @@ html, body {
         height: auto;
     }
 
-    } /* /@media */
+} /* /@media */
 
     .clearfix {
         /* clearfix via https://css-tricks.com/snippets/css/clear-fix/ */
@@ -199,20 +199,61 @@ html, body {
         }
 }
 
-.content {
-    background: #e0e0e0;
+    .content {
+        background: #e0e0e0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+        figure {
+            border: 1px solid #ccc;
+            float: left;
+            margin-right: 20px;
+            max-width: 600px;
+            position: relative;
+            width: 100%;
+        }
+            figure > img {
+                display: block;
+                width: 100%;
+            }
+            figure > figcaption {
+                background: rgba(120, 122, 119, .85);
+                color: white;
+                bottom: 0;
+                left: 0;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                position: absolute;
+            }
+@media all and (max-width: 1024px) {
+        figure {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+        }
+}
+@media all and (max-width: 600px) {
+            figure > figcaption {
+                background: rgb(120, 122, 119);
+                position: static;
+            }
 }
 
-.footer {
-    background: black;
-    color: gray;
-    font-family: Helvetica, Arial, sans-serif;
-    padding-top: 7px;
-    padding-right: 50px;
-    padding-left: 50px;
-    position: relative;
-}
-    .footer .black-ribbon {
-        background: white url('../img/black-ribbon-up.png') repeat-x;
-        top: 0;
+    .footer {
+        background: black;
+        color: gray;
+        font-family: Helvetica, Arial, sans-serif;
+        padding-top: 7px;
+        padding-right: 50px;
+        padding-left: 50px;
+        position: relative;
     }
+        .footer .black-ribbon {
+            background: white url('../img/black-ribbon-up.png') repeat-x;
+            top: 0;
+        }

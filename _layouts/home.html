@@ -10,6 +10,19 @@
 <div class="background">
     <div class="wrapper">
         <div class="content">
+{% if page.img %}
+            <figure>
+                <img src="{{ site.baseurl }}/ui/img/{{ page.img }}" />
+{% if page.img_caption %}
+                <figcaption>
+{% if page.img_caption_header %}
+                    <h2>{{ page.img_caption_header }}</h2>
+{% endif %}
+                    {{ page.img_caption }}
+                </figcaption>
+{% endif %}
+            </figure>
+{% endif %}
             <h2>About SHORE</h2>
 {% for page in site.pages %}
 {% if page.url == '/about/' %}
