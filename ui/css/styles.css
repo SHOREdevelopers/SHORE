@@ -129,6 +129,9 @@ html, body {
                 text-decoration: none;
                 text-transform: uppercase;
             }
+                .nav-bar > div.menu-nav-button {
+                    display: none;
+                }
                 .nav-bar div > div > a.active,
                 .nav-bar div > div > a:hover {
                     background-color: #469ccc;
