@@ -193,6 +193,11 @@ html, body {
         left: -9999px;
     }
 }
+@media all and (min-width: 769px) {
+        .nav-bar div:not(.menu-nav-button) {
+            display: block;
+        }
+}
 
 .content {
     background: #e0e0e0;
