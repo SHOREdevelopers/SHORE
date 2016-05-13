@@ -1,5 +1,8 @@
 ---
 layout: page
 title: Projects
+active: projects
 ---
-This is the Projects page.
+<a href="http://dev-rc-distro.pantheon.io/">COVE Alpha</a>
+
+<a href="http://infiniteulysses.com">Infinite Ulysses</a>

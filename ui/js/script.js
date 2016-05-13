@@ -1,12 +1,18 @@
 $(document).ready(function() {
-    $('.nav-bar > div').on('mouseenter', function(e) {
+    $('.nav-bar > div > div').on('mouseenter', function(e) {
         e.preventDefault();
 
         $(this).children('div').show();
     })
-        $('.nav-bar > div').on('mouseleave', function(e) {
-            e.preventDefault();
 
-            $(this).children('div').hide();
-        })
+    $('.nav-bar > div > div').on('mouseleave', function(e) {
+        e.preventDefault();
+
+        $(this).children('div').hide();
+    })
+
+    $('div.menu-nav-button').on('click', function(e) {
+        console.log( $(this).next('div') );
+        $(this).next('div').toggle();
+    })
 })

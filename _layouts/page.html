@@ -5,7 +5,14 @@
     <title>{{ page.title }}</title>
 </head>
 <body>
-{% include header.html %}
-{{ content }}
+    <div class="outer">
+    {% include header.html %}
+    <div class="background">
+        <div class="wrapper">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
 </body>
 </html>

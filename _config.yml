@@ -13,7 +13,7 @@ destination:      ./_site
 # source:           ./_build
 
 # Handling Reading
-exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
+exclude:          ["design", "templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
 
 # Conversion
 markdown:         kramdown
