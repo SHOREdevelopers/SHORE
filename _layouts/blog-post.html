@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+<div class="outer">
+{% include header.html %}
+<div class="background">
+    <div class="wrapper">
+        <div class="content">
+            <h1>{{ page.title }}</h1>
+            <div class="blog-posts clearfix">
+                <div>
+                    <p class="date">{{ page.date | date: '%B %d, %Y' }}</p>
+                    {{ page.content }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="push"></div></div>
+{% include footer.html %}
+<script
+src="https://code.jquery.com/jquery-2.2.3.min.js"
+integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/ui/js/script.js"></script>
+</body>
+</html>

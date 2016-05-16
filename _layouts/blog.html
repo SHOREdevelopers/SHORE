@@ -9,39 +9,22 @@
 {% include header.html %}
 <div class="background">
     <div class="wrapper">
-        <div class="content clearfix">
-{% if page.img %}
-            <figure>
-                <img src="{{ site.baseurl }}/ui/img/{{ page.img }}" />
-{% if page.img_caption %}
-                <figcaption>
-{% if page.img_caption_header %}
-                    <h2>{{ page.img_caption_header }}</h2>
-{% endif %}
-                    {{ page.img_caption }}
-                </figcaption>
-{% endif %}
-            </figure>
-{% endif %}
-            <h2><a href="{{ site.baseurl }}/about">About SHORE About SHORE About SHORE About SHORE</a></h2>
-{% for page in site.pages %}
-{% if page.url == '/about/' %}
-            {{ page.excerpt }}
-            <a class="button" href="{{ site.baseurl }}/about">Read More</a>
-{% endif %}
-{% endfor %}
+        <div class="content">
+            <h1>{{ page.title }}</h1>
             {{ content }}
             <div class="blog-posts clearfix">
 {% assign posts = site.categories.blog %}
-{% for post in posts limit:5 %}
+{% for post in posts %}
                 <div>
                     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
                     <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
                     {{ post.excerpt }}
                 </div>
 {% endfor %}
+                <!-- <h2><a href="{{ post.url }}">This is a Blog Post Title</a></h2>
+                <p class="date">May 1st, 2016</p>
+                <p>Hic sequi ut iusto omnis sint est. Et quia aliquam architecto et vel tempore quibusdam expedita. Blanditiis odio est in asperiores ipsa est debitis ut.</p> -->
             </div>
-            <a class="button" href="{{ site.baseurl }}/blog">View All</a>
         </div>
     </div>
 </div>

@@ -21,6 +21,8 @@ markdown:         kramdown
 # Outputting
 permalink: /:categories/:title/
 
+excerpt_separator: <!--more-->
+
 # Compensating for gh-pages project site
 baseurl: /SHORE
 # https://github.com/jekyll/jekyll/issues/332

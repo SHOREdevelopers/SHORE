@@ -2,6 +2,17 @@
 
 Reference site: http://covecollective.org/
 
+## Questions
+
+* Is blue heading a linked heading? Is blue reserved for links?
+* Do posts need to support categories?
+* Do we need pagination in the blog? Or will all posts ultimately fit on one page?
+
+## TODO
+
+* Sponsor/partner logos
+* @2x images
+
 ## Scope
 
 To start with, we’d like the main menu to include top-level links as well as separate site pages for:
